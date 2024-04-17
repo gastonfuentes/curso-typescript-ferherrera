@@ -6,3 +6,4 @@
     let letras = ['a', 'b'];
     letras.forEach(l => console.log(l.toUpperCase()));
 })();
+//# sourceMappingURL=arrays.js.map

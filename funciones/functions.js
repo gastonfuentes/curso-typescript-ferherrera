@@ -9,3 +9,4 @@
     };
     console.log(typeof (activeBatiSignal));
 })();
+//# sourceMappingURL=functions.js.map

@@ -4,3 +4,4 @@
     let isBatman = false;
     console.log(isSuperman);
 })();
+//# sourceMappingURL=booleans.js.map

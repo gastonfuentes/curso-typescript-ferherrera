@@ -8,3 +8,4 @@
     console.log(`el heroe mas copado es ${volcan}`);
     console.log((_a = batman[10]) === null || _a === void 0 ? void 0 : _a.toUpperCase);
 })();
+//# sourceMappingURL=strings.js.map
