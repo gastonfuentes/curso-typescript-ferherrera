@@ -1,7 +1,8 @@
 "use strict";
 (() => {
-    const fullName = () => {
+    const fullName = (firstName, ...argsRest) => {
+        return `${firstName} ${argsRest.join(' ')}`;
     };
-    /* const superman = fullName('gaston', 'fuentes', 'misho'); */
-    /* console.log(superman); */
+    const superman = fullName('gaston', 'fuentes', 'misho');
+    console.log(superman);
 })();
