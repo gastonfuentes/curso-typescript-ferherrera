@@ -1,23 +1,29 @@
-(() => {
+(()=> {
 
     type Hero = {
-        name: string,
-        age: number,
-        powers: string[],
-        getName?: () => string
+        name: string;
+        age?: number;
+        powers: number[];
+        getName?: () => string;
     }
 
-    let flash: Hero = {
-        name: 'flash',
-        age: 40,
-        powers: ['velicidad', 'fuerza']
+
+    let flash: Hero  = {
+        name: 'Barry Allen',
+        age: 24,
+        powers: [1,2]
+    } 
+
+    let superman: Hero  = {
+        name: 'Clark Kent',
+        age: 60,
+        powers: [1],
+        getName() {
+            return this.name;
+        }
     }
 
-    let batman: Hero = {
-        name: 'batman',
-        age: 50,
-        powers: ['velicidad'],
-        getName() { return this.name }
-    }
+       
+
 
 })()

@@ -1,32 +1,30 @@
-(() => {
+(()=> {
 
-    type River = {
+    type Avenger = {
         name: string,
-        titular: boolean
+        weapon: string;
     }
 
-    const lateralIzq: River = {
-        name: 'casco',
-        titular: false
-    }
-    const lateralDer: River = {
-        name: 'Herrera',
-        titular: true
-    }
-    const cinco: River = {
-        name: 'Villagra',
-        titular: true
+    const ironman: Avenger = {
+        name: 'Ironman',
+        weapon: 'Armorsuit'
     }
 
-    const jugadoresRiver: River[] = [lateralDer, lateralIzq, cinco]
+    const captainAmerica: Avenger = {
+        name: 'Capitán América',
+        weapon: 'Escudo'
+    }
 
+    const thor: Avenger = {
+        name: 'Thor',
+        weapon: 'Mjolnir'
+    }
 
-    for (const jugador of jugadoresRiver) {
-        console.log(jugador.name);
+    const avengers: Avenger[] = [ ironman, thor, captainAmerica ];
 
+    for (const avenger of avengers) {
+        console.log(avenger.name, avenger.weapon );
     }
 
 
 })()
-
-

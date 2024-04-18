@@ -1,23 +1,18 @@
-(() => {
+(()=> {
 
-    let flash: { name: string, age?: number, powers: string[], getNombre?: () => string } = {
-        name: 'flash',
-        age: 40,
-        powers: ['velicidad', 'fuerza']
+    let flash: { name: string, age?: number, powers: string[], getName?: () => string }  = {
+        name: 'Barry Allen',
+        age: 24,
+        powers: ['Súper velocidad','Viajar en el tiempo']
+    } 
+
+    let superman: { name: string, age?: number, powers: string[], getName?: () => string }  = {
+        name: 'Clark Kent',
+        age: 60,
+        powers: ['Súper velocidad']
     }
 
-
-    flash = {
-        name: 'pedro',
-        //age: 70,
-        powers: ['molestar'],
-        getNombre() {
-            return this.name
-        }
-    }
-
-
-    console.log(flash.name);
+    console.log(flash);
 
 
 })()

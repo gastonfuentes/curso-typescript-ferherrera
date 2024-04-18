@@ -1,44 +1,34 @@
-(() => {
+(()=> {
 
-    type Avenger = {
-
+    type Avengers = {
         nick: string;
         ironman: string;
-        flash: string;
-        activos: boolean;
+        vision: string;
+        activo: boolean;
         poder: number;
     }
 
-    const avengers: Avenger = {
-        nick: 'samuel',
-        ironman: 'juancito',
-        flash: 'pulgarcito',
-        activos: true,
-        poder: 1500
+    const avengers:Avengers = {
+        nick: 'Samuel L. Jackson',
+        ironman: 'Robert Downey Jr.',
+        vision: 'Paul Bettany',
+        activo: true,
+        poder: 1500.123123
     }
 
+    // const { poder, vision } = avengers
+    // console.log( poder.toFixed(2), vision.toUpperCase()  )
+    const printAvenger = ({ ironman, ...resto }:Avengers )=> {
 
-    const { flash, poder } = avengers
-
-    console.log(flash, poder);
-
-    const mostrarAvenger = ({ ironman, ...restoDeParametros }: Avenger) => {
-
-        console.log(ironman, restoDeParametros);
-
+        console.log( ironman, resto );
     }
 
-    mostrarAvenger(avengers)
-
-    //DES DE ARREGLOS
-
-    const avengersArray: [string, string, boolean] = ['flash', 'capitan america', true]
-
-    const [primer, ...otros] = avengersArray
-
-    console.log(otros);
+    // printAvenger( avengers );
 
 
+    const avengersArr: [string, boolean, number] = ['Cap. América', true, 150.15 ];
 
+    const [ capitan , ironman, seriaUnNumero ] = avengersArr;
+    // console.log({ ironman, capitan })
 
 })()
