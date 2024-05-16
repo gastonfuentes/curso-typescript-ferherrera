@@ -7,7 +7,7 @@
             public nombre: string,
             public apellido: string,
         ) {
-            console.log('desde el constructor de jugador river');
+            /*  console.log('desde el constructor de jugador river'); */
 
         }
 
@@ -24,20 +24,31 @@
             public titular: boolean
         ) {
             super(nom, ape)
-            console.log('desde el constructor de Defensor');
+            /*  console.log('desde el constructor de Defensor'); */
 
         }
 
         public mostrarMetodoSuper() {
-            console.log(super.nombreCompleto());
+            /*  console.log(super.nombreCompleto()); */
 
         }
+
+
+        public get apellidoYNombre(): string {
+            return `${this.apellido} - ${this.nombre}`
+        }
+
+
+
 
     }
 
     const lateralIzq = new Defensor('enzo', 'diaz', true)
 
     lateralIzq.mostrarMetodoSuper();
+    /* 
+        console.log(lateralIzq.apellidoYNombre); */
+
 
 
 })()
